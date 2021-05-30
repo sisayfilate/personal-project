@@ -1,0 +1,16 @@
+1. Importing Relevant Libraries
+2. Reading Data
+3. Data Cleanup
+4. Data Visualization
+    sns.heatmap(nyc_data.corr(),annot = True)
+    plt.show()
+    
+    sns.set(rc={'figure.figsize':(11.7,8.27)})
+    sns.set(style="darkgrid")
+    sns.relplot( x="Total", y="Precipitation", data=nyc_data);
+    
+    
+    sns.pairplot(nyc_data,x_vars=['HighTemp', 'LowTemp','Precipitation'],y_vars='Total',kind='reg',size=6)
+    plt.show()
+    
+5. Regression
